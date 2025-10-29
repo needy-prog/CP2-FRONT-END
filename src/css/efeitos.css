@@ -1,0 +1,178 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #faf6f2;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #5a001e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.6s ease;
+}
+
+header:hover {
+  background-color: #7b0028;
+  transform: skew(0deg, -1deg);
+}
+
+header::after {
+  content: "🍷";
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+  font-size: 2rem;
+  opacity: 0.7;
+  transition: transform 1s ease;
+}
+/* O emoji gira suavemente ao passar o mouse */
+header:hover::after {
+  transform: rotate(360deg);
+  
+}
+nav {
+  background-color: #7b0028;
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+/* Pseudo-classe e pseudo-elemento */
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #ffcfdf;
+  transition: width 0.4s ease;
+}
+
+/* Transição suave e transformação */
+nav a:hover {
+  color: #ffcfdf;
+  transform: scale(1.1);
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+
+.icon {
+  width: 100px;
+  transition: transform 0.6s ease;
+}
+
+/* Ao passar o mouse, aplica duas transformações */
+.icon:hover {
+  transform: rotate(-10deg) scale(1.1);
+}
+footer {
+  background-color: #5a001e;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* pseudo-elemento ao passar o mouse*/
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ffcfdf;
+    left: 0;
+    bottom: -3px;
+    transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* formulario */
+.form-container {
+    background-color: white;
+    border-radius: 10px;
+    width: 70%;
+    margin: 40px auto;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+/* Pseudo classe com foco no input*/
+input:focus, select:focus, textarea:focus {
+    border-color: #7b0028;
+    box-shadow: 0 0 5px rgba(123, 0, 40, 0.3);
+    outline: none;
+}
+
+/* Botão da pagina 4 animado */
+button {
+    background-color: #7b0028;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    animation: pulse 2.5s infinite;
+}
+
+button:hover {
+    background-color: #a00035;
+    transform: scale(1.05);
+}
+
+.form-group:nth-child(even) {
+    background-color: #fff7fa;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(123, 0, 40, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(123, 0, 40, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(123, 0, 40, 0);
+    }
+}

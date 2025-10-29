@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Definições de metadados e estilo da página -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuração para responsividade -->
+    <title>Vinheria Agnello</title> <!-- Título da página que aparece na aba do navegador -->
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/efeitos.css">
+    <link rel="icon" href="/src/assets/imgs/icon.webp" type="image/png">
+</head>
+<body>
+
+    <!-- Cabeçalho da página -->
+    <header>
+        <div class="header-container">
+            <img src="/src/assets/imgs/icon.webp" alt="Logo da Vinheria Agnello" class="icon"> <!-- Imagem à esquerda -->
+            <div class="header-text">
+                <h1>Vinheria Agnello</h1> <!-- Nome da vinheria -->
+                <p>O Sabor da Tradição em Cada Taça</p> <!-- Slogan da empresa -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Barra de navegação -->
+    <nav>
+        <a href="/index.html">Início</a> <!-- Link para a página inicial -->
+        <a href="/src/pages/page2.html">Sobre Nós</a> <!-- Link para a página de informações sobre a loja -->
+        <a href="/src/pages/page3.html">Produtos</a> <!-- Link para a página de produtos -->
+        <a href="/src/pages/page4.html">Contato</a> <!-- Link para a página de contato -->
+        <a href="/src/pages/page5.html">Guia</a> <!-- Link para a página 5 -->
+    </nav>
+
+    <!-- Formulário -->
+    <div class="form-container">
+        <h1 style="text-align: center;">Entre em contato conosco!</h1>
+        
+        <form id="vinhariaagnello">
+            <!-- Dados do Chamado -->
+            <div class="section">
+                <div class="section-title">Dados do Chamado</div>
+                
+                <div class="form-group">
+                    <label for="nome" class="required">Digite seu nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Sexo:</label>
+                    <select name="sexo" id="sexo">
+                        <option value="">Selecione</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outros">Outros</option>
+                        <option value="prefiro_nao_informar">Prefiro não informar</option>
+                    </select>
+                </div>
+
+            <div class="section">
+                <div class="section-title">Solicitante</div>
+                
+                <div class="form-group">
+                    <label for="cliente">Cliente:</label>
+                    <input type="text" id="cliente" name="cliente" placeholder="Nome do cliente">
+                </div>
+                
+                <div class="form-group">
+                    <label for="contato">Contato:</label>
+                    <input type="text" id="contato" name="contato" placeholder="Telefone ou e-mail">
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Dados de Abertura</div>
+                
+                <div class="form-group">
+                    <label for="tipoChamado">Tipo de Chamado:</label>
+                    <select name="tipoChamado" id="tipoChamado">
+                        <option value="">Selecione</option>
+                        <option value="incidente">Incidente</option>
+                        <option value="urgente">Urgente</option>
+                        <option value="requisicao">Requisição</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="categoria">Categoria:</label>
+                    <select name="categoria" id="categoria">
+                        <option value="">Selecione</option>
+                        <option value="interna">Interna</option>
+                        <option value="externa">Externa</option>
+                        <option value="evento">Evento</option>
+                    </select>
+                </div>
+                
+                
+                <div class="form-group">
+                    <label for="problema">Descreva seu Problema:</label>
+                    <textarea id="solicitacao" name="solicitacao" rows="4" placeholder="Descreva seu problema com a vinharia agnello"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="severidade">Severidade:</label>
+                    <select name="severidade" id="severidade">
+                        <option value="">Selecione</option>
+                        <option value="baixa">Baixa</option>
+                        <option value="media">Média</option>
+                        <option value="alta">Alta</option>
+                    </select>
+                </div>
+            </div>
+            <a href="/src/pages/chamado.html" style="text-decoration: none;">
+                <button>Enviar</button>
+            </a>
+        </form>
+    </div>
+
+    <!-- Rodapé da página -->
+    <footer>
+    </footer>
+
+</body>
+</html>
