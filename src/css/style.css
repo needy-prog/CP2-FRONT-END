@@ -5,7 +5,7 @@ body {
     background: linear-gradient(135deg, #fff5f0, #f8e1e1);
     flex-direction: column;
 }
-
+ 
 /* Estilo para o cabeçalho da página */
 header {
     background-color: #8B0000; /* Cor de fundo vermelha */
