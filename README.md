@@ -37,3 +37,4 @@
  - Pedro Henrique Olimpio (Cerejaa)
  - Guilherme Segolin de Oliveira Mendes (mebolim)
 
+   Obs: Não conseguimos fazer o github pages funcionar, deixamos o site no https://cp-2-front-end.vercel.app/
